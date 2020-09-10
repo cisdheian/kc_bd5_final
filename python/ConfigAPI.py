@@ -7,7 +7,7 @@ import json
 import pandas as pd
 
 # Geocoding API KEY
-GAPIK = "AIzaSyCVHVA98CtG7PwsvY0Igd4HmlzDk1hz5_M"
+GAPIK = "[APIKEY_AQUI]"
 
 Geo_Config = {
     "url": "https://maps.googleapis.com/maps/api/geocode/json"
