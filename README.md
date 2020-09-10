@@ -31,6 +31,7 @@ Aplicamos los modelos de regresion para determinar cual es el que mejor se acopl
 En Train el algoritmo dió mejores resultados fue DecisionTreeRegressor, pero al ejecutar sobre los datos de validacion determinamos que el modelo padecia de Overfitting, por lo que ejecutamos nuevamente usando tecnicas de cross-validation usando GridSearchCV, con los que obtenemos los hiper parametros que mejores resultados nos brindan sin llevar a ser overfitting, en este caso se concluye con un RandomForestRegressor profundidad 8 con 41 estimadores.
 
 El detalle completo de todo el analisis tecnico se encuentra en los notebooks de la carpeta **jupyter** de este proyecto, especificamente el notebook [ProyectoFinal.ipynb](./jupyter/ProyectoFinal.ipynb)
+<p>
 <table align="left">
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/cisdheian/kc_bd5_final/blob/master/jupyter/ProyectoFinal.ipynb">
@@ -38,7 +39,7 @@ El detalle completo de todo el analisis tecnico se encuentra en los notebooks de
 	</a>
   </td>
 </table>
-
+</p>
 
 
 
@@ -46,7 +47,7 @@ El detalle completo de todo el analisis tecnico se encuentra en los notebooks de
 Finalmente pero no menos importante tenemos como consumir el modelo, el modelo ya entrenado se consume desde tableau, para ello hemos publicado en TabPy una función que realiza las transformaciones necesarias y consume el modelo que fue entrenado en las fases previas.
 
 El detalle de como se prepara el modelo y se publica en TabPy lo puede ver en el notebook [PublicarModeloTableau.ipynb](./jupyter/PublicarModeloTableau.ipynb)
-
+<p>
 <table align="left">
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/cisdheian/kc_bd5_final/blob/master/jupyter/PublicarModeloTableau.ipynb">
@@ -54,6 +55,7 @@ El detalle de como se prepara el modelo y se publica en TabPy lo puede ver en el
 	</a>
   </td>
 </table>
+</p>
 
 Donde finalmente obtenemos la prediccion en base a los parametros de entrada configurados en tableau desktop
 
